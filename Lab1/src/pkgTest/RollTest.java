@@ -14,7 +14,11 @@ public class RollTest {
 
 		for (int a = 0; a < 10000; a++) {
 			Roll r = new Roll();
-			// TODO: Make sure value of roll is between 1 and 12.
+			int rollvalue = r.getScore();
+			if (rollvalue < 12 || rollvalue > 2) {
+				fail("Die value is" + Integer.toString(rollvalue));
+				//it fails on purpose so I can see the values :)
+			}
 		}
 
 	}

@@ -13,7 +13,13 @@ public class DieTest {
 
 		for (int a = 0; a < 10000; a++) {
 			Die d = new Die();
-			// TODO: Make sure value of die is between 1 and 6.
+			int dicevalue = d.getDieValue();
+			if (dicevalue < 6 || dicevalue > 1) {
+				fail("Die value is" + Integer.toString(dicevalue));
+				
+				//it fails on purpose so I can see the values :)
+			}
+			
 		}
 
 	}
