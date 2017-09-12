@@ -12,11 +12,11 @@ public class Round {
 	//rollcount is used  counts how many rolls
 
 	public Round() {
+		
+		eGameResult = pkgCore.eGameResult.NULL;
+//eGameReslut null is to help check if the code works
 		Roll RolledValue = new Roll();
 		ComeOutScore = RolledValue.getScore();
-		eGameResult = pkgCore.eGameResult.NULL;
-		//eGameReslut null is to help check if the code works
-
 		if (ComeOutScore == 7 || ComeOutScore == 11) {
 			eGameResult = pkgCore.eGameResult.NATURAL;
 			//uses the eGameresult list to give out a value
