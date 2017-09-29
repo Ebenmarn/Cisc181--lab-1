@@ -14,7 +14,7 @@ public class Roundtest {
 		for (int a = 0; a < 10000; a++) {
 			Round r = new Round();
 			if (r.GetResult()!=eGameResult.NULL) {
-				fail("Roundvalue is"+ r.GetResult()+"  " +r.getRollCount());
+				System.out.print("Roundvalue is"+ r.GetResult()+"  " +r.getRollCount());
 				/*it fails on purpose so I can see the values :) it checks for null because
 			I set make the round first thing set eGameResult incase something breaks
 			
